@@ -204,10 +204,10 @@ main {
     position: fixed;
     width: 100%;
     z-index: -1;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#373c5222), to(#373c5255)), url("/hero-img.e0586151.png");
-    background-image: -webkit-linear-gradient(#373c5222, #373c5255), url("/hero-img.e0586151.png");
-    background-image: -moz-linear-gradient(#373c5222, #373c5255), url("/hero-img.e0586151.png");
-    background-image: linear-gradient(#373c5222, #373c5255), url("/hero-img.e0586151.png");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#373c5222), to(#373c5255)), url("hero-img.e0586151.png");
+    background-image: -webkit-linear-gradient(#373c5222, #373c5255), url("hero-img.e0586151.png");
+    background-image: -moz-linear-gradient(#373c5222, #373c5255), url("hero-img.e0586151.png");
+    background-image: linear-gradient(#373c5222, #373c5255), url("hero-img.e0586151.png");
     -ms-interpolation-mode: nearest-neighbor;
         image-rendering: -webkit-optimize-contrast;
         image-rendering: -moz-crisp-edges;
