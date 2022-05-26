@@ -1,0 +1,29 @@
+{
+  "name": "ed_site_yps",
+  "version": "1.0.0",
+  "description": "For edu YPS website",
+  "main": "index.html",
+  "scripts": {
+    "node:scss": "node-sass scss/main.scss index.css -w",
+    "server": "cd dist && live-server",
+    "parcel:build": "parcel build index.html",
+    "parcel:watch": "parcel index.html",
+    "start": "npm-run-all --parallel node:scss parcel:watch server",
+    "prefix-css": "postcss --use autoprefixer -b 'last 5 versions' main.css -o cssTest/main.css"
+  },
+  "author": "James Coolidge",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^9.8.8",
+    "core-js": "^3.19.3",
+    "node-sass": "^6.0.1",
+    "npm-run-all": "^4.1.5",
+    "parcel": "^1.12.3",
+    "regenerator-runtime": "^0.13.9"
+  },
+  "devDependencies": {
+    "postcss": "^8.4.4",
+    "postcss-cli": "^9.0.2",
+    "postcss-preset-env": "^7.0.1"
+  }
+}

@@ -1,0 +1,87 @@
+.header {
+  position: relative;
+  height: 55rem;
+  width: 100%;
+
+  &__background {
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+    background-image:  linear-gradient(#373c5222, #373c5255), url("img/hero-img.png");
+    image-rendering: pixelated;
+    backface-visibility: hidden;
+    background-size: cover;
+    height: 55rem;
+  }
+  &__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 24rem;
+    border: 0.3rem solid #f1f1f1;
+    backdrop-filter: blur(.5px);
+    background-color: rgba(0, 47, 68, 0.5);
+    width: 72rem;
+    border-radius: 0.3rem;
+    animation: header 0.4s ease-out;
+  }
+
+  &__text {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f5f5f5;
+    font-weight: 400;
+    font-size: 3.6rem;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    padding: 0 14rem;
+    line-height: 4rem;
+    letter-spacing: 0.1rem;
+    text-shadow: #434343 0 0 7px;
+    animation: firstP 1s ease-in-out;
+    backface-visibility: hidden;
+
+    &-bar {
+      box-sizing: border-box;
+      display: inherit;
+      height: 0.5rem;
+      background-color: #fafafa;
+      border-radius: 70px;
+      margin: 1.5rem 0;
+      width: 100%;
+    }
+
+    &-bottem {
+      display: inherit;
+      font-weight: 300;
+      color: #ffffff;
+      letter-spacing: 0.4rem;
+    }
+  }
+}
+@keyframes header {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -30%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes firstP {
+  0% {
+    opacity: 0;
+    transform: translate(-42%, -50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
